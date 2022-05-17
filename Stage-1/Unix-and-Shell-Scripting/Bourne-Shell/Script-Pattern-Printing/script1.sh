@@ -1,9 +1,9 @@
-rows=5
-for((i=1; i<=rows; i++))
+#!/bin/sh
+for i in {1..5}
 do
-  for((j=1; j<=i; j++))
-  do
-    echo -n "$i"
-  done
-  echo
+   for j in $(seq 1 $i)
+   do
+       printf "$i"
+   done
+   printf "\n"
 done
